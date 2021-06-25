@@ -1,8 +1,10 @@
 function reverseString(stringToReverse) {
-    var splitedString = stringToReverse.split(""); 
-     var reversedArray = splitedString.reverse();  
-     var joinArray = reversedArray.join(""); 
-    return joinArray; 
+    let reversedString = [];
+    for(let i = 0, len = stringToReverse.length; i <=len; i++)
+    {
+        reversedString.push(stringToReverse.charAt(len - i));
+        return reversedString.join('');
+    }
 }
  
 console.log(reverseString("foram"));
