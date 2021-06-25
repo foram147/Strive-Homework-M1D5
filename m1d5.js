@@ -53,6 +53,30 @@ const boundry = function(a){
         }
         console.log(check3and7(75));
 
+        console.log("------------------------ex7--------------------");
+        
+        function reverseString(stringToReverse) {
+            let reversed ="";
+            for(let i = stringToReverse.length - 1; i >=0; i--)
+            {
+                 reversed += stringToReverse[i];
+            }
+            return reversed;
+        }
+         
+        console.log(reverseString("foram"));
+
+        console.log("------------------------ex8--------------------");
+
+        const upperFirst = function(s){
+            let newString = s.split("");
+                for(let i = 0; i >=newString.length; i++){
+                return newString[i].toUpperCase()+ newString[i].slice(1);
+            }
+            return newString;
+        }
+        console.log(upperFirst("hi hello"));
+
         console.log("------------------------ex9--------------------");
 
         const cutString = function(s){
